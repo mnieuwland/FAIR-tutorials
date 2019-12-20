@@ -96,7 +96,7 @@ select * where {
 * limit 100: laat alleen de eerste 100 triples zie die aan de voorwaarden voldoen.
 
 Stel dat je allen de subjecten wil laten zien in deze query. Je gebruikt dan.
-```
+``` sparql
 select ?s where { 
 	?s ?p ?o .
 } limit 100
@@ -146,20 +146,21 @@ Een aantal dingen vallen op:
 * De prefix voor RDFS is toegevoegd. Als je handmatig de tweede regel erbij hebt getype, zul je misschien gemerkt hebben dat GraphDB deze prefix zelf automatisch toevoegt, de eerste keer dat je die intypt.
 
 Wat de twee regel doet is de variabele 's' (die gevuld is met de URI's van alle provincies door de eerste regel) gebruiken via de pijl rdfs:label stappen naar de naam van de provincie en het resultaat in de variabele 'provincie' te stoppen. De volgende tabel is het resultaat.
-s | provincie
----|---
-:Provincie/PV23	| Overijssel
-:Provincie/PV29	| Zeeland
-:Provincie/PV22	| Drenthe
-:Provincie/PV27	| Noord-Holland
-:Provincie/PV25	| Gelderland
-:Provincie/PV21	| Friesland
-:Provincie/PV28	| Zuid-Holland
-:Provincie/PV30	| Noord-Brabant
-:Provincie/PV26	| Utrecht
-:Provincie/PV20	| Groningen
-:Provincie/PV31	| Limburg
-:Provincie/PV24	| Flevoland
+
+| s | provincie |
+| ------ | ------ |
+| :Provincie/PV23	| Overijssel |
+| :Provincie/PV29	| Zeeland |
+| :Provincie/PV22	| Drenthe |
+| :Provincie/PV27	| Noord-Holland |
+| :Provincie/PV25	| Gelderland |
+| :Provincie/PV21	| Friesland |
+| :Provincie/PV28	| Zuid-Holland |
+| :Provincie/PV30	| Noord-Brabant |
+| :Provincie/PV26	| Utrecht |
+| :Provincie/PV20	| Groningen |
+| :Provincie/PV31	| Limburg |
+| :Provincie/PV24	| Flevoland |\\\\\\\
 
 Je ziet dat de prefix ook gebruikt wordt om het resultaat leesbaarder te maken, dus :Provincie/PV23, in plaats van <http://www.fairify.nl/demo/Provincie/PV23>.
 
@@ -240,9 +241,10 @@ select ?gemeente ?homepage ?partij where {
 }
 ```
 Met als resultaat
-?gemeente | ?homepage | ?partij
----|---|---
-Almelo | <http://www.almelo.nl> | "Volkspartij voor Vrijheid en Democratie"@nl
+
+| ?gemeente | ?homepage | ?partij |
+| ----- | ----- | ----- |
+| Almelo | <http://www.almelo.nl> | "Volkspartij voor Vrijheid en Democratie"@nl |
 Dinkelland | <http://www.dinkelland.nl> | "Volkspartij voor Vrijheid en Democratie"@nl
 Steenwijkerland | <http://www.steenwijkerland.nl> | "Christen-Democratisch Appèl"@nl
 Twenterand | <http://www.twenterand.nl> | "Christen-Democratisch Appèl"@nl
