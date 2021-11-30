@@ -5,7 +5,7 @@ Wanneer je vervolgens de data benadert via de ontologie, maakt het eigenlijk nie
 
 In dit document worden de mogelijkheden om een ontologie te gebruiken verkend aan de hand van een praktisch voorbeeld. Het voorbeeld gaat over de body mass index (BMI) van patiënten. De BMI is een waarde die afgeleid wordt uit het gewicht en de lengte van een persoon.
 ```
-BMI = gewicht / lengte<sup>2</sup>
+BMI = gewicht / lengte^2
 ```
 Op basis van deze berekening kan het gewicht worden gecategoriseerd volgens onderstaande tabel:
 
